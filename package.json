@@ -1,0 +1,40 @@
+{
+  "name": "london-capital-website",
+  "version": "1.0.0",
+  "description": "Modern, responsive website for London Capital Investments with mobile optimization",
+  "main": "base/index.html",
+  "scripts": {
+    "start": "live-server base --port=3000 --open=/base/index.html",
+    "dev": "live-server base --port=3000 --open=/base/index.html",
+    "serve": "live-server base --port=3000",
+    "format": "prettier --write \"base/**/*.{html,css,js}\"",
+    "lint": "eslint \"base/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ts1892/London-.git"
+  },
+  "keywords": [
+    "investment",
+    "london",
+    "financial-services",
+    "responsive",
+    "modern-design",
+    "mobile-friendly"
+  ],
+  "author": "ts1892",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ts1892/London-/issues"
+  },
+  "homepage": "https://github.com/ts1892/London-#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "eslint": "^9.0.0",
+    "globals": "^16.3.0",
+    "live-server": "^1.2.2",
+    "prettier": "^3.0.0"
+  }
+}
