@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - London Capital Investments</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>London Capital</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="terms.html" class="nav-link">Terms</a></li>
+            </ul>
+            <div class="nav-auth">
+                <button class="btn-login">Login</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with our investment experts today</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Get In Touch</h2>
+                        <p>Ready to start your investment journey? Our team of experts is here to help you achieve your financial goals. Contact us today for a personalized consultation.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h4>Visit Our Office</h4>
+                                    <p>123 Canary Wharf<br>London E14 5AB<br>United Kingdom</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h4>Call Us</h4>
+                                    <p>+44 20 7123 4567<br>Mon-Fri: 9:00 AM - 6:00 PM GMT</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h4>Email Us</h4>
+                                    <p>info@londoncapital.com<br>support@londoncapital.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h4>Business Hours</h4>
+                                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 2:00 PM<br>Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <h2>Send Us a Message</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="investmentAmount">Investment Amount Range</label>
+                                <select id="investmentAmount" name="investmentAmount">
+                                    <option value="">Select an option</option>
+                                    <option value="under-100k">Under £100,000</option>
+                                    <option value="100k-500k">£100,000 - £500,000</option>
+                                    <option value="500k-1m">£500,000 - £1,000,000</option>
+                                    <option value="1m-5m">£1,000,000 - £5,000,000</option>
+                                    <option value="over-5m">Over £5,000,000</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="serviceInterest">Service of Interest</label>
+                                <select id="serviceInterest" name="serviceInterest">
+                                    <option value="">Select a service</option>
+                                    <option value="wealth-management">Wealth Management</option>
+                                    <option value="portfolio-management">Portfolio Management</option>
+                                    <option value="retirement-planning">Retirement Planning</option>
+                                    <option value="real-estate">Real Estate Investment</option>
+                                    <option value="private-equity">Private Equity</option>
+                                    <option value="esg-investing">ESG Investing</option>
+                                    <option value="digital-assets">Digital Assets</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us about your investment goals and how we can help..." required></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Subscribe to our newsletter for market insights and updates</label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">I agree to the <a href="terms.html">Terms and Conditions</a> and <a href="privacy.html">Privacy Policy</a> *</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2>Find Us</h2>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Interactive Map Coming Soon</p>
+                        <p>123 Canary Wharf, London E14 5AB</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>What is the minimum investment amount?</h3>
+                        <p>Our minimum investment amount varies by service, starting from £50,000 for portfolio management services. Contact us for specific requirements based on your investment goals.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How quickly can I get started?</h3>
+                        <p>We can typically onboard new clients within 2-3 weeks, depending on the complexity of your investment requirements and due diligence processes.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you offer virtual consultations?</h3>
+                        <p>Yes, we offer both in-person and virtual consultations to accommodate your schedule and preferences. Our team is equipped with secure video conferencing technology.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What makes London Capital different?</h3>
+                        <p>Our combination of global market expertise, personalized service, and proven track record sets us apart. We focus on building long-term relationships and delivering consistent results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>London Capital</h3>
+                    <p>Your trusted partner in global investment excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>123 Canary Wharf, London E14 5AB</p>
+                    <p>+44 20 7123 4567</p>
+                    <p>info@londoncapital.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 London Capital Investments. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
